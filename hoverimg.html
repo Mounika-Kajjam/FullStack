@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bootstrap </title>
+        <link rel='stylesheet' href='bootstrap-4.5.2-dist/css/bootstrap.min.css'/>
+        <script type="text/javascript" src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+        <script type="text/css"></script>
+        <style>
+            .row{
+                padding-bottom: 10px;
+            }
+            .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 40%;
+        background-color: pink; 
+        }
+            
+            .overlay{
+                position:absolute;
+                top:30%;
+                left:10%;
+                height:100%;
+                width:100%; 
+                opacity:0;
+                transition:.200s ease;
+            }
+            
+            .center{
+                position: absolute;
+                text-align: center;
+                padding-top: 20%;
+                padding-bottom:10%;
+                padding-left:60%;
+
+            }
+            
+            .imghover:hover .overlay{
+                opacity:1;
+                
+            }      
+        
+        </style>
+        </head>
+    <body>
+        <div class='container-fluid'>
+            <div class='row'>
+                 <div class='col-md-4  imghover '>
+                     <img  class='background' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/800px-Python_logo_and_wordmark.svg.png">
+                     <div class='overlay center'><a href = "https://www.python.org/" target="_blank"><button type="button" class="btn btn-light btn-md">Let's Go</button></a>
+                    
+			    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+
+</html>
